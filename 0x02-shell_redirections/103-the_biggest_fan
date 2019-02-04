@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n+1 log | cut -d $'\t' -f1 | sort -u
+tail -n +2 | cut -f1 | sort | uniq -c | sort -nr | cut -c9- | head -n 11
