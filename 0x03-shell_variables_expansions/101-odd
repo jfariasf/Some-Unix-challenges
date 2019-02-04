@@ -1,2 +1,2 @@
 #!/bin/bash
-fmt | tr " " "\n"
+paste -s -d' \n' | cut -d " " -f1
